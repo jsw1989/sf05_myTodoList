@@ -10,9 +10,9 @@ Mysql 5.7
 
 
 Process of Test:
-1- clone the Git repository to local server.\n
-2- on the project folder run composer install , to install symfony dependencies.\n
-3- run npm install to install js dependencies.\n
+1- clone the Git repository to local server.
+2- on the project folder run composer install , to install symfony dependencies.
+3- run npm install to install js dependencies.
 4- change .env file and configure the acess to database:
 DATABASE_URL=mysql://user_name:password@127.0.0.1:3306/sf05_tododb?serverVersion=5.7
 change your own usern_name and your password.
