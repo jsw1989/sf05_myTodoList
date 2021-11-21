@@ -1,0 +1,38 @@
+{% extends "_template.html.twig" %}
+
+{% block title %}
+    Edit task
+{% endblock %}
+
+{% block content %}
+<div class="columns is-centered section">
+        <div class="column is-one-third box">
+            <h1 class="title has-text-primary has-text-centered">
+               Create/Update Task
+            </h1>
+            
+        {{form_start(edit_form)}}
+
+            {{ form_row(edit_form.title, {
+                label: 'Title'
+            }) }}
+        
+            {{ form_row(edit_form.note, {
+                label: 'Note'
+            }) }}
+
+            {{ form_row(edit_form.status, {
+                label: 'Status'
+            }) }}
+            {{ form_row(edit_form.dueTo, {
+                    label: 'Due To'
+                }) }}
+
+        <button class="button is-primary is-fullwidth" type="submit">
+                    Save
+        </button>
+        {{ form_end(edit_form) }}
+     </div>
+  </div>
+
+{% endblock %}
